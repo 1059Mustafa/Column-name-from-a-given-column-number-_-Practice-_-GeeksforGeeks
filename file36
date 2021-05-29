@@ -1,0 +1,19 @@
+string colName (long long int n)
+    {
+        string res = ""; // to store the result
+    
+    	int temp;
+    	while (n--) // while n > 0
+    	{
+    	   // n--;
+    		temp = n % 26;
+    		res += ('A' + temp);
+    		n /= 26;
+    	}
+    
+    
+    	// res contains the answer but in reverse.
+    	// hence, reversing it
+    	reverse (res.begin (), res.end ());
+    	return res;
+    }
